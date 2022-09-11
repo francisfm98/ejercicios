@@ -1,1 +1,38 @@
+from getpass import getpass
 
+j1=getpass("Ingrese: piedra, papel o tijera:   ---- Escribir como esta en los ejemplos")
+j1=str(j1)
+j1
+
+j2=getpass("Ingrese: piedra, papel o tijera:-------- Escribir como esta en los ejemplos ")
+j2=str(j2)
+j2
+
+if j1==j2:
+  re_j1=0
+  re_j2=0
+  print('resultado de su juego es: jugador 1= ', re_j1,' jugador 2= ', re_j2)
+elif j1=='piedra' and j2=='papel':
+  re_j1=0
+  re_j2=1
+  print('resultado de su juego es: jugador 1= ', re_j1,' jugador 2= ', re_j2)
+elif j1=='papel' and j2=='piedra':
+  re_j1=1
+  re_j2=0
+  print('resultado de su juego es: jugador 1= ', re_j1,' jugador 2= ', re_j2)
+elif j1=='piedra' and j2=='tijeras':
+  re_j1=1
+  re_j2=0
+  print('resultado de su juego es: jugador 1= ', re_j1,' jugador 2= ', re_j2)
+elif j1=='tijeras' and j2=='piedra':
+  re_j1=0
+  re_j2=1
+  print('resultado de su juego es: jugador 1= ', re_j1,' jugador 2= ', re_j2)
+elif j1=='tijeras' and j2=='papel':
+  re_j1=1
+  re_j2=0
+  print('resultado de su juego es: jugador 1= ', re_j1,' jugador 2= ', re_j2)
+else : #j1=='papel' and j2=='tijeras'
+  re_j1=0
+  re_j2=1
+  print('resultado de su juego es: jugador 1= ', re_j1,' jugador 2= ', re_j2)
